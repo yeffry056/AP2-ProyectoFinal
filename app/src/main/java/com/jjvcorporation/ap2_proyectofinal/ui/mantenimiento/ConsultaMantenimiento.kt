@@ -65,9 +65,6 @@ fun RowMantenimiento(
             modifier = Modifier.padding(8.dp),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Row() {
-                //Imagen
-            }
 
             Text(
                 text = mantenimiento.descripcion,

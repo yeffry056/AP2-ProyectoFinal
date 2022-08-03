@@ -27,13 +27,13 @@ fun SplashScreen(
     navController: NavHostController,
     viewModelMantenimiento: ViewModelMantenimiento = hiltViewModel()
 ) {
-    val mantenimiento =listOf<Mantenimiento>(
+   /* val mantenimiento =listOf<Mantenimiento>(
         Mantenimiento(mantenimientoId = 1,"Cambio de Aceite",3 ),
         Mantenimiento(mantenimientoId = 2,"Rotacion de Gomas",7 ),
         Mantenimiento(mantenimientoId = 3,"Chequeo de Fluidos",1 ),
         Mantenimiento(mantenimientoId = 4,"Chequeo de Gomas",1 )
 
-    )
+    )*/
 
 
     LaunchedEffect(key1 = true){

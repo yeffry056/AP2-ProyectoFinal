@@ -19,7 +19,7 @@ class ViewModelMantenimiento @Inject constructor(
     var Periodicidad by mutableStateOf("")
     var tipoMantenimiento by mutableStateOf("")
     //poner nombre de parametro
-    var mantenimiento by mutableStateOf(Mantenimiento(0,0, "",0))
+    var mantenimiento by mutableStateOf(Mantenimiento(0, "",0))
 
     var Mantenimiento = mantenimientoRepository.getListMantenimiento()
         private set

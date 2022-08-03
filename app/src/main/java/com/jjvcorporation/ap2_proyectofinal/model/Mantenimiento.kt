@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 data class Mantenimiento(
     @PrimaryKey(autoGenerate = true)
     val mantenimientoId: Int = 0,
-    val vehiculoId: Int = 0,
     val descripcion: String,
     val periodicidad: Int
 

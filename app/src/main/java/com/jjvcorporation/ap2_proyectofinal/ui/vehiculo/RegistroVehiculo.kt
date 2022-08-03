@@ -4,8 +4,7 @@ import android.widget.Toast
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Save
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -102,7 +101,8 @@ fun MostrarFoto(
         modifier = Modifier.fillMaxSize(),
 
         ){
-        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Column(modifier = Modifier.padding(8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally) {
 
 
             OutlinedTextField(
@@ -123,7 +123,7 @@ fun MostrarFoto(
                     Text(text = "Marca")
                 },
                 leadingIcon = {
-                    Icon(imageVector = Icons.Default.Person, contentDescription = null)
+                    Icon(imageVector = Icons.Filled.BrightnessAuto, contentDescription = null)
                 },
                 value = viewModelVehiculo.marca,
                 onValueChange = {viewModelVehiculo.marca = it},
@@ -136,7 +136,7 @@ fun MostrarFoto(
                     Text(text = "Modelo")
                 },
                 leadingIcon = {
-                    Icon(imageVector = Icons.Default.Person, contentDescription = null)
+                    Icon(imageVector = Icons.Default.CarRepair, contentDescription = null)
                 },
                 value = viewModelVehiculo.modelo,
                 onValueChange = {viewModelVehiculo.modelo = it},
@@ -160,7 +160,7 @@ fun MostrarFoto(
                     Text(text = "Año")
                 },
                 leadingIcon = {
-                    Icon(imageVector = Icons.Default.Person, contentDescription = null)
+                    Icon(imageVector = Icons.Default.Timelapse, contentDescription = null)
                 },
                 value = viewModelVehiculo.año,
                 onValueChange = {if(it.length < 5)viewModelVehiculo.año = it},
